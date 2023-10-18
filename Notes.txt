@@ -1,0 +1,21 @@
+#configure typescript in our project...
+(recommended setup locally not globally)
+
+
+1. npm init
+2. npm i -g typescript (for globally install) or npm i typescript
+3. tsc --init (if globally intall) or npx tsc --init
+
+
+////////////////////////
+setup tsconfig.js file
+////////////////////////
+1. define => src of .ts file 
+    "rootDir": "./src",   
+
+
+2. define => output of .ts to .js  in "Emit" section
+    "outDir": "./dist/js",   
+
+then run command on npx tsc or tsc (for globally installed)
+for continously changes watch run npx tsc --watch or npx tsc -w
