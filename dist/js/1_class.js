@@ -121,8 +121,8 @@
 // MyFun = fun;...
 ////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-const btn = document.getElementById("btn");
-function fun1(data) {
-    console.log("Hello" + " " + data);
-}
-btn.addEventListener("click", fun1.bind(null, "World!"));
+// const btn = document.getElementById("btn") !;
+// function fun1(data:string) {
+//     console.log("Hello"+ " " + data);   
+// }
+// btn.addEventListener("click", fun1.bind(null,"World!"));

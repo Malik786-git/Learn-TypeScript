@@ -170,13 +170,13 @@
 
 ////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-const btn = document.getElementById("btn")!;
+// const btn = document.getElementById("btn") !;
 
-function fun1(data:string) {
-    console.log("Hello"+ " " + data);   
-}
+// function fun1(data:string) {
+//     console.log("Hello"+ " " + data);   
+// }
 
-btn.addEventListener("click", fun1.bind(null,"World!"));
+// btn.addEventListener("click", fun1.bind(null,"World!"));
 
 
 
