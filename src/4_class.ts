@@ -13,7 +13,7 @@ console.log(elem.value);
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 2. generics...(for provide additional information)
-// wrong
+// wrong..
 const promise = new Promise((resolve, reject) => {
   setTimeout(() => {
     resolve("Done");
@@ -26,6 +26,8 @@ const promise = new Promise((resolve, reject) => {
 // so we used generic to provide extra info..
 // right
 //type promise, with return string....
+
+
 const promise2: Promise<string> = new Promise((resolve, reject) => {
   setTimeout(() => {
     resolve("Done");
@@ -101,10 +103,8 @@ console.log(merged2.age);
 
 // const nadir = new Person();
 
-
 ///////////////////////////////////////////
-// practical way to used decorator
-
+// practical way to used decorator...
 
 function FillHTML(template: string, id: string) {
     return function (_: Function) {

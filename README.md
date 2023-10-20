@@ -1,4 +1,6 @@
-#configure typescript in our project...
+#Programming with TypeSrcipt
+
+##configure typescript in our project...
 (recommended setup locally not globally)
 
 
@@ -7,11 +9,12 @@
 3. tsc --init (if globally intall) or npx tsc --init
 
 
-//////////////////////////////
-// Setup tsconfig.json file //
-//////////////////////////////
 
-Goto tsconfig.json file, define the following paths
+##Setup tsconfig.json file 
+
+
+###Goto tsconfig.json file, define the following paths
+
 1. src of .ts file uncomment rootDir set path tsconfig.json
     "rootDir": "./src",   
 
