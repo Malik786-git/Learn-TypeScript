@@ -1,6 +1,6 @@
-#Programming with TypeSrcipt
+# Programming with TypeSrcipt
 
-##configure typescript in our project...
+## configure typescript in our project...
 (recommended setup locally not globally)
 
 
@@ -10,10 +10,10 @@
 
 
 
-##Setup tsconfig.json file 
+## Setup tsconfig.json file 
 
 
-###Goto tsconfig.json file, define the following paths
+### Goto tsconfig.json file, define the following paths
 
 1. src of .ts file uncomment rootDir set path tsconfig.json
     "rootDir": "./src",   
