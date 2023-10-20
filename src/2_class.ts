@@ -89,25 +89,66 @@ console.log("class 2");
 ////////////////////////////////////////////////////////////
 
 // Define: It is a pattern to restrict a class to make only one object.
-class Car {
+// class Car {
 
-  static obj: Car;
-  private constructor(private name: string) {}
+//   static obj: Car;
+//   private constructor(private name: string) {}
 
-  static getObj(name: string) {
-    if (Car.obj) {
-      return Car.obj;
-    }
-    this.obj = new Car(name);
-    return this.obj;
-  }
-}
+//   static getObj(name: string) {
+//     if (Car.obj) {
+//       return Car.obj;
+//     }
+//     this.obj = new Car(name);
+//     return this.obj;
+//   }
+// }
 
 // const car1 = new Car() // not initialze outside the class, because constructor is private
 
-const car1 = Car.getObj("Toyota");
-const car2 = Car.getObj("Honda");
+// const car1 = Car.getObj("Toyota");
+// const car2 = Car.getObj("Honda");
 
-console.log(car1, car2,'cars'); // both of theme is toyota
+// console.log(car1, car2,'cars'); // both of theme is toyota
+
+////////////////////////////////////////////////////////////
+// Function Overloading....
+////////////////////////////////////////////////////////////
+type Combined = string | number;  // combined is union, dicuss in class 3 in detail..
+
+// function add(a:Combined, b: Combined) {
+//   if (typeof a === "number" && typeof b === "number") {
+//     return a + b;
+//   }
+//   else 
+//   if (typeof a === "string" && typeof b === "string") {
+//     return a + b;
+//   }else{
+//     throw Error("Type Check Error!")
+//   }
+// }
+
+// add(3, 5);
+// add("abc", "def").split(" ");//err there is no return type
+// to resolve it, define return type of add func 
+// (add("abc", "def") as string).split(" "); 
+
+// more convanient technique, that is called function overload...
+
+function add(a:string, b: string): string;
+function add(a:number, b: number): number;
+function add(a:Combined, b: Combined) {
+  if (typeof a === "number" && typeof b === "number") {
+    return a + b;
+  }
+  else 
+  if (typeof a === "string" && typeof b === "string") {
+    return a + b;
+  }else{
+    throw Error("Type Check Error!")
+  }
+}
+
+add(3, 5);
+add("abc", "def").split(" ");
 
 
